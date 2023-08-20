@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>My Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-brand">Portfolio</div>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="navbar" id="Home">
+      <div class="navbar-brand">Munavvar</div>
+      <div class="overlay-menu"   >
+
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
       <div class="menu-icon" id="menu-icon">
         <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
       </div>
     </nav>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-image">
         <img src="munavvar.jpg" alt="Profile Photo" />
       </div>
@@ -38,12 +43,12 @@
           playing essential role for the growth of the organization.
         </p>
         <div class="buttons">
-            <a href="#" class="button">Download Cv</a>
-            <a href="#" class="button2">Contact Me</a>
+            <a href="munavvar.pdf" class="button">Download Cv</a>
+            <a href="#Contact" class="button2">Contact Me</a>
           </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="Skills">
       <h2>Skills</h2>
       <div class="skill-cards">
           <div class="skill-card">
@@ -68,37 +73,132 @@
               <img src="html.svg" alt="HTML Logo">
               <h3>HTML</h3>
           </div>
-          <!-- Add more skill cards -->
-      </div>
-  </section>
-    <section class="skills">
-      <div class="skill-cards">
           <div class="skill-card">
               <img src="tailwind.svg" alt="React Logo">
               <h3>tailwind>
-          </div>
-          <div class="skill-card">
-              <img src="typescript.svg" alt="Node.js Logo">
-              <h3>typescript</h3>
-          </div>
-        
-         
-          <div class="skill-card">
-              <img src="materialui.svg" alt="JavaScript Logo">
-              <h3>materialui</h3>
-          </div>
-          <div class="skill-card">
-              <img src="angular.svg" alt="CSS Logo">
-              <h3>angular</h3>
-          </div>
-          <div class="skill-card">
-              <img src="bootstrap.svg" alt="HTML Logo">
-              <h3>bootstrap</h3>
-          </div>
-          <!-- Add more skill cards -->
-      </div>
+              </div>
+              <div class="skill-card">
+                <img src="typescript.svg" alt="Node.js Logo">
+                <h3>typescript</h3>
+              </div>
+              
+              
+              <div class="skill-card">
+                <img src="materialui.svg" alt="JavaScript Logo">
+                <h3>materialui</h3>
+              </div>
+              <div class="skill-card">
+                <img src="angular.svg" alt="CSS Logo">
+                <h3>angular</h3>
+              </div>
+              <div class="skill-card">
+                <img src="bootstrap.svg" alt="HTML Logo">
+                <h3>bootstrap</h3>
+              </div>
+            </div>
   </section>
-    
+  <section class="projects-section" id="Projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1">
+        <h3>Portfolio</h3>
+        <p>This is My Portfolio That I made At early time of the college In this Portfolio I used Reactjs.
+        </p>
+        <a href="https://munavvarpopatiya.tech/">Learn More</a>
+      </div>
+      <div class="project-card">
+        <img src="project2.png" alt="Project 2">
+
+        <h3>BookMyPG</h3>
+        <p>BookMyPG is an innovative online platform designed to simplify the process of finding and booking paying guest (PG) accommodations</p>
+        <a href="https://github.com/munavvar78/pg78">Learn More</a>
+      </div>
+      <div class="project-card">
+        <img src="project3.png" alt="Project 2">
+
+        <h3>chatapp<h3>
+        <p>The Chat App project involved the development of a modern and userfriendly messaging application that facilitates real-time communication between users.
+        </p>
+        <a href="https://github.com/munavvar78/chatapp">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="services-section" id="Services">
+    <h2>Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Node.js Development</h3>
+        <p>Build scalable and efficient server-side applications with Node.js.</p>
+        <ul>
+          <li>RESTful API development</li>
+          <li>Real-time applications</li>
+          <li>Node.js consulting</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>React.js Development</h3>
+        <p>Create dynamic and interactive user interfaces with React.js.</p>
+        <ul>
+          <li>Single-page applications (SPA)</li>
+          <li>Component-based architecture</li>
+          <li>React.js training</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>MongoDB Database</h3>
+        <p>Store and manage your data using the NoSQL database, MongoDB.</p>
+        <ul>
+          <li>Database design and modeling</li>
+          <li>Data migration and integration</li>
+          <li>MongoDB support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="Contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=savar+kundla&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                
+            </div>
+
+        </div>
+    </div>
+</section>    
+<footer id="footer">
+  <div class="container-fluid">
+      <div class="social-icons mt-4">
+          <a href="https://www.instagram.com/munavvar7_" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/munavvar78" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/munavvar-popatiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </div>
+</footer>
     
     <script src="script.js"></script>
   </body>

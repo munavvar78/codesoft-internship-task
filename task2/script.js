@@ -1,34 +1,24 @@
-
-document.addEventListener("DOMContentLoaded", function() {
-    const marquee = document.querySelector('.marquee');
-    const content = document.querySelector('.content');
-    
-    // Clone the content to make it circular
-    content.innerHTML += content.innerHTML;
-
-    // Calculate the total width for circular scrolling
-    const totalWidth = content.clientWidth;
-
-    // Set the width of the content to match the circular length
-    content.style.width = totalWidth + 'px';
-
-    // Create the circular scrolling effect
-    function loop() {
-        const scrollPos = (Date.now() / 1000) * -100; // Adjust the scrolling speed here
-        content.style.transform = `translateX(${scrollPos}px)`;
-        requestAnimationFrame(loop);
-    }
-
-    loop();
-});
-
-const menuIcon = document.getElementById("menu-icon");
-const navList = document.querySelector(".nav-list");
-
-menuIcon.addEventListener("click", () => {
-    navList.classList.toggle("active");
-    menuIcon.classList.toggle("active");
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const overlayMenu = document.querySelector('.overlay-menu');
+  
+    // Add click event listener to the menu icon
+    menuIcon.addEventListener('click', function () {
+      overlayMenu.classList.toggle('active');
+    });
+  
+    // Get all the navigation links inside the overlay menu
+    const navLinks = overlayMenu.querySelectorAll('a');
+  
+    // Add click event listeners to each navigation link
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        // Remove the 'active' class from the overlay menu
+        overlayMenu.classList.remove('active');
+      });
+    });
+  });
+  
 const textContainer = document.querySelector('.text');
 const words = ['Full Stack Developer', 'MERN Developer'];
 let currentWordIndex = 0;
@@ -52,25 +42,3 @@ function changeText() {
 }
 
 changeText();
-// Pause marquee on hover
-$(document).ready(function(){
-    $('.carousel').slick({
-        slidesToShow: 4,
-        centerMode: true,
-        centerPadding: '0',
-        infinite: true,
-        speed: 1000, // Adjust the speed as needed
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
-    });
-});
